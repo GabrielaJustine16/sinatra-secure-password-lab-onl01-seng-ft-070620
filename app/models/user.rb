@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-   has_secure_password
-    validates :username, :presence => true #=> ensures that username is not blank
-    
+    has_secure_password
+    validates_presence_of :username
 end
